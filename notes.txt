@@ -1,0 +1,58 @@
+
+Javascript Notes
+
+
+Javascript has variables - Primitive / Non Primitive
+
+Primitive  -  numbers, strings, null, undefined, nan, boolean, undeclared
+Non Primitive - arrays, objects, functions
+
+
+JS - everything is an object 
+
+Numbers - 1, 2, 3 , 3.4, 5.5 , -6, -1.004 - integers, decimals, whole numbers 
+
+strings - '', "" - 'sai', "ahdaskjd akdgasjdags ajksdgaskkajsdhas kajsgdasjkd", "98273982732", "[1,2]"
+
+null - datatype it can be assigned to number, string, object, array or anything in js.. it simply means it is not holding any value at this point in time
+
+undefined - var a; 
+
+boolean - true/ false 
+
+
+Non Primitive 
+===========
+
+var asdjalskdjas = 'sai'
+Arrays -- [1,'sai',asdjalskdjas, {}, null, undefined]
+
+
+json - {key:value} - strings "{"name": "{1:2}"}"
+Objects - {key:value} - strings {name: {1:2}}
+
+
+
+Objects
+=====
+
+var myobj = {
+ name : "meghana",
+ age: 26,
+ books: ['shekjsks','ldkajhdks','asldjslkd'],
+ friends: {
+ 		favourtieFriends: ['sai','pawan','skdjhskj'],
+    nearbyfriends: ['asdajshdka','asdhaskjd','ajksdhajsk'],
+    frequency: true
+ },
+ datalike: false,
+ parents: ['jagdish','jyothi']
+};
+
+alert(JSON.stringify(myobj.friends.favourtieFriends[1]));
+
+
+functions
+=========
+
+var a = function(){}

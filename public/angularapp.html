@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newModule">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to my Angular App, this is Awesome!!</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .footerClass {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+
+        .buttonWrapper {
+            float: right;
+            display: block;
+        }
+    </style>
+</head>
+
+<body ng-controller="newController">
+
+    <div class="wrapper">
+        <header>
+            <h1 style="text-align:center">Welcome to my Page</h1>
+            <div class="buttonWrapper">
+                <button class="btn btn-primary" ui-sref="home">Home</button>
+                <button class="btn btn-danger" ui-sref="about">About</button>
+            </div>
+        </header>
+        <section>
+            <div ui-view></div>
+        </section>
+        <footer class="footerClass">
+            <p>All the rights reserved</p>
+        </footer>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./services.js"></script>
+    <script src="./meg-service.js"></script>
+</body>
+
+</html>
